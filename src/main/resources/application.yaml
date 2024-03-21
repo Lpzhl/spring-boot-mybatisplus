@@ -1,0 +1,24 @@
+#
+server:
+  port: 8080
+
+# Devtools
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      url: jdbc:mysql:///
+      username: root
+      password: ''
+      driver-class-name: com.mysql.cj.jdbc.Driver
+  application:
+    name: demo
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/java
+# mybatis-plus
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto #主键自增
